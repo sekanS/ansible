@@ -1,0 +1,8 @@
+---
+- name: This is a test for State Manager
+  hosts: all
+  tasks:
+    - name: Create a file called '/tmp/hello-world.txt' with the content 'hello world'.
+    copy:
+      src: ./files/hello-world.txt
+      dest: /tmp/hello-world.txt
